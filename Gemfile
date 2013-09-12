@@ -12,7 +12,9 @@ gem 'koala'
 gem 'fb_graph'
 gem 'omniauth-facebook'
 
-gem 'pg'
+group :production do 
+	gem "pg"
+end
 
 
 #gem 'mysql2'

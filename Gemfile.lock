@@ -160,6 +160,7 @@ DEPENDENCIES
   fbgraph
   jquery-rails
   koala
+  pg
   omniauth
   omniauth-facebook
   rails (= 3.2.13)
