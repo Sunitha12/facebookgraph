@@ -11,13 +11,11 @@ gem 'fbgraph'
 gem 'koala'
 gem 'fb_graph'
 gem 'omniauth-facebook'
-group :production do
-	gem 'pg'
-end
 
-group :development, :test do
-  gem 'mysql2'
-end
+gem 'pg'
+
+
+#gem 'mysql2'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
