@@ -1,0 +1,10 @@
+<div style="padding:20px;">	
+	<%= form_tag fbdetails_path, :method => "post" do %>
+		<div style="width:300px;">
+			<%= label_tag :access_token %>
+			<%= text_field_tag :access_token %>
+		</div><br/>
+		<%= submit_tag "Submit" %>
+		<%= link_to "Cancel", fbdetails_path %>
+	<% end %>
+</div>

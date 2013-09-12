@@ -1,0 +1,25 @@
+<div style="padding:20px;">
+	<h3>FB Details</h3>
+	<%= link_to "Add FB Details", new_fbdetail_path %>
+
+	<table width="90%" border="1">
+		<th>ID</th>
+		<th>User Name</th>
+		<th>Name</th>
+		<th>Gender</th>
+		<th>Home Town</th>
+		<th>Location</th>
+		<th>Bio</th>
+		<% @fbdetails.each do |fb| %>
+			<tr>
+				<td><%= fb.uid %></td>
+				<td><%= fb.user_name %></td>
+				<td><%= fb.name %></td>
+				<td><%= fb.gender %></td>
+				<td><%= fb.hometown %></td>
+				<td><%= fb.location %></td>
+				<td><%= fb.bio %></td>
+			</tr>
+		<% end %>
+	</table>
+</div>
