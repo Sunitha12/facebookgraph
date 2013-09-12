@@ -79,6 +79,7 @@ GEM
     mime-types (1.25)
     multi_json (1.8.0)
     multipart-post (1.2.0)
+    mysql2 (0.3.13)
     oauth2 (0.8.1)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -160,7 +161,7 @@ DEPENDENCIES
   fbgraph
   jquery-rails
   koala
-  pg
+  mysql2
   omniauth
   omniauth-facebook
   rails (= 3.2.13)

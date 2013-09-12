@@ -12,8 +12,14 @@ gem 'koala'
 gem 'fb_graph'
 gem 'omniauth-facebook'
 
-gem "pg"
-gem 'activerecord-postgresql-adapter'
+group :production do 
+	gem "pg"
+	gem "activerecord-postgresql-adapter"
+end
+
+group :development, :test do 
+	gem "mysql2"
+end
 
 
 #gem 'mysql2'
